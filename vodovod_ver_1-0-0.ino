@@ -1,4 +1,6 @@
-/*
+/* 08.02.2022 prenos v GIT
+ * ime datoteke ostaja nespremenjeno
+ *
  * verzija 1.0.0
  * osnovna verzija zaceta 20.10.2021
  * 
