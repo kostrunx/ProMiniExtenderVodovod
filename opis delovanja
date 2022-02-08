@@ -1,0 +1,50 @@
+opis delovanja vodovoda
+
+powerup
+ob vklopu napajanja se izvrši naslednje
+	pobriši zahtevo zapiranje
+	pobriši zahtevo odpiranje
+	pobriši LED odprt
+	pobriši LED zaprt
+	preveri stanje ventila
+	če je zaprt
+		prični cikel odpiranje
+	če je odprt
+		postavi LED odprt
+	če je v nedeločenem položaju
+		prični cikel odpiranje
+
+cikel odpiranje
+	pobriši zahtevo zapiranje
+	postavi zahtevo odpiranje
+
+cikel zapiranje
+	pobriši zahtevo odpiranje
+	postavi zahtevo zapiranje
+	
+kontrola ventila
+	če je ventil odprt
+		postavi LED odprt
+		pobriši zahtevo odpiranje
+	če je ventil zaprt
+		postavi LED zaprt
+		pobriši zahtevo zapiranje
+	če ventil ni odprt
+		pobriši LED odprt
+	če ventil ni zaprt
+		pobriši LED zaprt
+
+ob remote zahteva za odpiranje
+	pojdi na cikel odpiranje
+
+ob remote zahteva za zapiranje
+	pojdi na cikel zapiranje
+
+ob OdpiranjeErr ali ZapiranjeErr
+	pobriši zahtevo odpiranje
+	pobriši zahtevo zapiranje
+	pobriši OdpiranjeEnable
+	pobriši ZapiranjeEnable
+	
+	
+
